@@ -12,7 +12,7 @@ body {
 
 
 
- /* Main (Aside + Artice) */
+                /*  MAIN (Aside + Artice) */
 
 
 main {
@@ -26,7 +26,7 @@ main {
 
 
 
- /* Aside */
+                /*         ASIDE        */
 
 
 aside {
@@ -55,21 +55,49 @@ aside h2 {
 
 
 
-  /* Article */
+#Loisirs {
+    display: flex;
+    flex-direction: column;
+    /* align-self: flex-end;            <========  Appeler Kulvar à l'aide */ 
+}
+
+#logos {
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+                /*      ARTICLE      */
 
 article {
     padding: 20px;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
+    background-color: #FFF8E1;
 }
 
 article section {
-
+    display: flex;
+    flex-direction: column;
 }
 
-article .title h2 {
-    margin: 0;
+    /* Article : titres */
+
+article section h1 {
+    margin-left: 12%;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+article section h2 {
+    margin-left: 12%;
+    font-size: 2rem;
+    margin-bottom: 40px;
 }
 
 article .title { 
@@ -78,14 +106,65 @@ article .title {
     margin: 0 -20px;
     text-align: center;
     border-bottom: 2px #4FC3F7 solid;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
 
 article .title i {
-    margin-left: 12%;
-    margin-right: 12%;
-
+    font-size: 2rem;
+    margin-left: 11%;
+    margin-right: 11%;
 }
 
+article .title h2 {
+    margin: 0;
+}
+
+   /* Article : blocs d'informations */
+
+.bloc {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    padding-top: 22px;
+    width: 25%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+section h3,
+section h4 {
+  margin-bottom: 0;
+}
+
+section h4 {
+  margin-top: 0;
+}
+
+  /* ++ Article : Expérience professionnelle */
+
+#experience_professionnelle .bloc .text p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+  /* ++ Article : Recommandations */
+
+#recommandations .bloc {
+    justify-content: space-evenly;
+}
 
 
 
