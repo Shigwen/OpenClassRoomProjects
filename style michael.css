@@ -11,39 +11,34 @@ body {
 }
 
 
-
                 /*  MAIN (Aside + Artice) */
-
 
 main {
     display: flex;
     flex-direction: row;
     max-width: 1190px;
     margin: auto;
-    border: 2px solid rgb(202, 202, 202);
+    border: 1px solid rgb(202, 202, 202);
     min-height: calc(100vh - 20px);
 }
 
 
-
                 /*         ASIDE        */
-
 
 aside {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
     width: 33%;
     background-color: #4FC3F7;
-    border: 2px solid rgb(202, 202, 202);
+    border: 1px solid rgb(202, 202, 202);
 }
-
 
 aside img {
     width: 100%;
     margin-bottom: 20px;
 }
-
 
 aside h2 {
     color:  #4FC3F7;
@@ -52,13 +47,9 @@ aside h2 {
     text-align: center;
 }
 
-
-
-
 #Loisirs {
     display: flex;
     flex-direction: column;
-    /* align-self: flex-end;            <========  Appeler Kulvar à l'aide */ 
 }
 
 #logos {
@@ -167,12 +158,87 @@ section h4 {
 }
 
 
+  /*     RESPONSIVE     */
 
+  /*   medium screens   */
 
+@media screen and (max-width: 1024px) {
 
+    main {
+        flex-direction: column;
+    }
+    
+    aside {
+        width: 100%;
+    }
 
+    aside img {
+        max-width: 300px;
+        max-height: 350px;
+        display: block;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    #responsive_wrap {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+    }
 
+}
+
+  /*    little    */
+  
+@media screen and (max-width: 740px) {
+
+    main {
+        flex-direction: column;
+    }
+    
+    aside {
+        width: 100%;
+    }
+
+    aside img {
+        max-width: 300px;
+        max-height: 350px;
+        display: block;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #responsive_wrap {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .bloc {
+        flex-direction: column;
+    }
+    .date {
+        width: 100%;
+    }
+
+    .title {
+        flex-direction: column;
+    }
+
+    #responsive_recommandations {
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .mentor {
+        margin: 10px;
+    }
+
+}
 
 
 
